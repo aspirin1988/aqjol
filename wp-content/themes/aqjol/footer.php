@@ -26,10 +26,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?php bloginfo('template_directory') ?>/public/js/bootstrap.min.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/public/js/main.js"></script>
 <script src="https://callback.blink.kz/resources/callback/js/mailer.js"></script>
 <script>
 	var submitSMG = new BMModule();
 	submitSMG.submitForm(function(success) { $('.blink-mailer input[type=submit]').val('Отправить'); }, function(error) {});
+
+
 </script>
 </body>
 </html>
