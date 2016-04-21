@@ -148,3 +148,23 @@
 [Wed Apr 20 15:47:36.196810 2016] [:error] [pid 14451] [client 127.0.0.1:50532] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:45
 [Wed Apr 20 15:47:36.196814 2016] [:error] [pid 14451] [client 127.0.0.1:50532] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521
 [Wed Apr 20 15:47:36.196818 2016] [:error] [pid 14451] [client 127.0.0.1:50532] PHP   8. require_once() /home/serg/site/aqjol/wp-includes/template.php:562
+[Wed Apr 20 16:31:58.167367 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP Catchable fatal error:  Object of class WP_Error could not be converted to string in /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-index.php on line 8, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:31:58.168587 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP Stack trace:, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:31:58.169090 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP   1. {main}() /home/serg/site/aqjol/index.php:0, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:31:58.169125 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP   2. require() /home/serg/site/aqjol/index.php:17, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:31:58.169131 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP   3. require_once() /home/serg/site/aqjol/wp-blog-header.php:16, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:31:58.169480 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP   4. include() /home/serg/site/aqjol/wp-includes/template-loader.php:89, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:31:58.169505 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP   5. get_template_part() /home/serg/site/aqjol/wp-content/themes/aqjol/page-index.php:23, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:31:58.169518 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:31:58.169530 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:31:58.169541 2016] [:error] [pid 14022] [client 127.0.0.1:52176] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/about/
+[Wed Apr 20 16:32:18.143306 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP Catchable fatal error:  Object of class WP_Error could not be converted to string in /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-index.php on line 8, referer: http://aqjol.tes/
+[Wed Apr 20 16:32:18.143338 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP Stack trace:, referer: http://aqjol.tes/
+[Wed Apr 20 16:32:18.143359 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   1. {main}() /home/serg/site/aqjol/index.php:0, referer: http://aqjol.tes/
+[Wed Apr 20 16:32:18.143366 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   2. require() /home/serg/site/aqjol/index.php:17, referer: http://aqjol.tes/
+[Wed Apr 20 16:32:18.143375 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   3. require_once() /home/serg/site/aqjol/wp-blog-header.php:16, referer: http://aqjol.tes/
+[Wed Apr 20 16:32:18.143382 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   4. include() /home/serg/site/aqjol/wp-includes/template-loader.php:89, referer: http://aqjol.tes/
+[Wed Apr 20 16:32:18.143388 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   5. get_template_part() /home/serg/site/aqjol/wp-content/themes/aqjol/page-index.php:23, referer: http://aqjol.tes/
+[Wed Apr 20 16:32:18.143393 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/
+[Wed Apr 20 16:32:18.143397 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/
+[Wed Apr 20 16:32:18.143401 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/

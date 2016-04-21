@@ -1,47 +1,37 @@
-<?php
-/**
- * Template part for displaying posts.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package aqjol
- */
 
-?>
+<!-- ГЛАВНЫЙ РАЗДЕЛ -->
+<div class="main-section about text-center">
+	<div class="container">
+		<img class="img-responsive logo-big" src="<?=get_field('logo',4)?>" alt="Большое лого">
+		<br>
+		<img class="img-responsive main-image" src="<?=get_the_post_thumbnail_url(10)?>" alt="Интерьер">
+	</div>
+</div>
+<!-- конец ГЛАВНЫЙ РАЗДЕЛ -->
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			}
+<!-- О РЕСТОРАНЕ ТЕКСТ -->
+<div class="container about-text-container">
+	<div class="row">
+		<div class="col-lg-12">
+			<h3><?php the_title()?></h3>
+			<p><?=get_the_content()?>
+			</p></div>
+	</div>
+</div>
+<!-- конец  О РЕСТОРАНЕ ТЕКСТ -->
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php aqjol_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'aqjol' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'aqjol' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php aqjol_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+<!-- КАРТИНКИ О РЕСТОРАНЕ -->
+<div class="container pictures-about">
+	<div class="row">
+		<div class="col-sm-5">
+			<img class="img-responsive" src="<?=get_field('dish1')?>" alt="Блюдо">
+		</div>
+		<div class="col-sm-2">
+			<img class="img-responsive" src="<?php bloginfo('template_directory')?>/public/images/east-europe-foods.png" alt="Кухни">
+		</div>
+		<div class="col-sm-5">
+			<img class="img-responsive" src="<?=get_field('dish2')?>" alt="Блюдо">
+		</div>
+	</div>
+</div>
+<!-- конец КАРТИНКИ О РЕСТОРАНЕ -->
