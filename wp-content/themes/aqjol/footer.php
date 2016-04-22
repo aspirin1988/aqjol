@@ -25,8 +25,9 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="<?php bloginfo('template_directory') ?>/public/js/uikit.min.js"></script>
 <script src="<?php bloginfo('template_directory') ?>/public/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_directory') ?>/public/js/main.js"></script>
+<script src="<?php bloginfo('template_directory') ?>/public/js/lightbox.min.js"></script>
 <script src="https://callback.blink.kz/resources/callback/js/mailer.js"></script>
 <script>
 	var submitSMG = new BMModule();
