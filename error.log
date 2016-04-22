@@ -168,3 +168,33 @@
 [Wed Apr 20 16:32:18.143393 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/
 [Wed Apr 20 16:32:18.143397 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/
 [Wed Apr 20 16:32:18.143401 2016] [:error] [pid 14022] [client 127.0.0.1:52235] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/
+[Thu Apr 21 15:18:02.370392 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP Catchable fatal error:  Object of class WP_Error could not be converted to string in /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-menu.php on line 28, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:02.371743 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP Stack trace:, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:02.371765 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP   1. {main}() /home/serg/site/aqjol/index.php:0, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:02.371771 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP   2. require() /home/serg/site/aqjol/index.php:17, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:02.371776 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP   3. require_once() /home/serg/site/aqjol/wp-blog-header.php:16, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:02.371780 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP   4. include() /home/serg/site/aqjol/wp-includes/template-loader.php:89, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:02.371797 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP   5. get_template_part() /home/serg/site/aqjol/wp-content/themes/aqjol/page-menu.php:23, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:02.371804 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:02.371810 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:02.371816 2016] [:error] [pid 11105] [client 127.0.0.1:45457] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/news/
+[Thu Apr 21 15:18:41.215124 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP Catchable fatal error:  Object of class WP_Error could not be converted to string in /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-menu.php on line 28, referer: http://aqjol.tes/menu/
+[Thu Apr 21 15:18:41.215164 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP Stack trace:, referer: http://aqjol.tes/menu/
+[Thu Apr 21 15:18:41.215174 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP   1. {main}() /home/serg/site/aqjol/index.php:0, referer: http://aqjol.tes/menu/
+[Thu Apr 21 15:18:41.215180 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP   2. require() /home/serg/site/aqjol/index.php:17, referer: http://aqjol.tes/menu/
+[Thu Apr 21 15:18:41.215184 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP   3. require_once() /home/serg/site/aqjol/wp-blog-header.php:16, referer: http://aqjol.tes/menu/
+[Thu Apr 21 15:18:41.215189 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP   4. include() /home/serg/site/aqjol/wp-includes/template-loader.php:89, referer: http://aqjol.tes/menu/
+[Thu Apr 21 15:18:41.215194 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP   5. get_template_part() /home/serg/site/aqjol/wp-content/themes/aqjol/page-menu.php:23, referer: http://aqjol.tes/menu/
+[Thu Apr 21 15:18:41.215198 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/menu/
+[Thu Apr 21 15:18:41.215203 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/menu/
+[Thu Apr 21 15:18:41.215206 2016] [:error] [pid 10977] [client 127.0.0.1:45507] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/menu/
+[Fri Apr 22 09:24:39.341062 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP Warning:  Invalid argument supplied for foreach() in /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-faq.php on line 14, referer: http://aqjol.tes/reviews/
+[Fri Apr 22 09:24:39.341627 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP Stack trace:, referer: http://aqjol.tes/reviews/
+[Fri Apr 22 09:24:39.341659 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP   1. {main}() /home/serg/site/aqjol/index.php:0, referer: http://aqjol.tes/reviews/
+[Fri Apr 22 09:24:39.341674 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP   2. require() /home/serg/site/aqjol/index.php:17, referer: http://aqjol.tes/reviews/
+[Fri Apr 22 09:24:39.341686 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP   3. require_once() /home/serg/site/aqjol/wp-blog-header.php:16, referer: http://aqjol.tes/reviews/
+[Fri Apr 22 09:24:39.341697 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP   4. include() /home/serg/site/aqjol/wp-includes/template-loader.php:89, referer: http://aqjol.tes/reviews/
+[Fri Apr 22 09:24:39.341709 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP   5. get_template_part() /home/serg/site/aqjol/wp-content/themes/aqjol/page-faq.php:23, referer: http://aqjol.tes/reviews/
+[Fri Apr 22 09:24:39.341721 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/reviews/
+[Fri Apr 22 09:24:39.341746 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/reviews/
+[Fri Apr 22 09:24:39.341750 2016] [:error] [pid 5968] [client 127.0.0.1:54306] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/reviews/

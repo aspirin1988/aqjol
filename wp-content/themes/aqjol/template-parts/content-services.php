@@ -1,47 +1,25 @@
-<?php
-/**
- * Template part for displaying posts.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package aqjol
- */
 
-?>
+<!-- УСЛУГИ -->
+<div class="container services">
+	<h3 class="text-center">Услуги</h3>
+	<br>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			}
+	<?php
+	$category=get_category_by_slug('services');
+	$args = array( 'cat'=> $category->cat_ID ,'numberposts'=>20);
+	$categories=get_posts($args);
+	?>
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php aqjol_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
+	<div class="row">
+		<?php foreach($categories as $key=>$value) : ?>
+		<div class="col-sm-4">
+			<img class="img-responsive" src="<?=get_the_post_thumbnail_url($value->ID)?>" alt="Описание">
+			<a href="<?=get_permalink($value->ID)?>" ><h4><?=$value->post_title?></h4></a>
+			<h5>Описание</h5>
+			<p><?=$value->post_content?></p>
+		</div>
+		<?php endforeach; ?>
 
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'aqjol' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'aqjol' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php aqjol_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	</div>
+</div>
+<!-- конец УСЛУГИ -->

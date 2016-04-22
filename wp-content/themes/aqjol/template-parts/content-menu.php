@@ -1,47 +1,38 @@
 <?php
-/**
- * Template part for displaying posts.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package aqjol
- */
-
+$categories = get_category_by_slug('menu');
+$args = array(
+	'type'         => 'post',
+	'child_of'     => $categories->term_id,
+	'parent'       => '',
+	'orderby'      => 'ID',
+	'order'        => 'ASC',
+	'hide_empty'   => 1,
+	'hierarchical' => 1,
+	'exclude'      => '',
+	'include'      => '',
+	'number'       => 0,
+	'taxonomy'     => 'category',
+	'pad_counts'   => false,
+);
+$categories = get_categories( $args );
 ?>
+<!-- МЕНЮ -->
+<div class="container menu">
+	<h3 class="text-center">Меню</h3>
+	<div class="row">
+		<?php foreach($categories as $value): $args = array( 'posts_per_page' =>10, 'cat'=> $value->cat_ID ); $post=get_posts($args); ?>
+		<div class="col-sm-6">
+			<div class="img-container">
+				<img src="<?=get_the_post_thumbnail_url($post[0]->ID)?>" alt="Меню">
+				<h2><?=$value->post_title?></h2>
+			</div>
+			<?php  foreach($post as $val): ?>
+				<a href="<?=get_permalink($val->ID)?>"><p><?=$val->post_title?><span><?=get_field('price',$val->ID)?></span></p></a>
+				<?php endforeach; ?>
+		</div>
+		<?php endforeach; ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			}
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php aqjol_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'aqjol' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'aqjol' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php aqjol_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+	</div>
+</div>
+<!-- конец МЕНЮ -->
