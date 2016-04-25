@@ -1121,3 +1121,14 @@
 [Mon Apr 25 11:15:00.733997 2016] [:error] [pid 8187] [client 127.0.0.1:51317] PHP   5. get_query_template() /home/serg/site/aqjol/wp-includes/template.php:404, referer: http://aqjol.tes/menu/
 [Mon Apr 25 11:15:00.734001 2016] [:error] [pid 8187] [client 127.0.0.1:51317] PHP   6. apply_filters() /home/serg/site/aqjol/wp-includes/template.php:45, referer: http://aqjol.tes/menu/
 [Mon Apr 25 11:15:00.734006 2016] [:error] [pid 8187] [client 127.0.0.1:51317] PHP   7. call_user_func_array:{/home/serg/site/aqjol/wp-includes/plugin.php:235}() /home/serg/site/aqjol/wp-includes/plugin.php:235, referer: http://aqjol.tes/menu/
+[Mon Apr 25 11:41:21.188852 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP Warning:  print_r() expects at least 1 parameter, 0 given in /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-single-services.php on line 10, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188893 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP Stack trace:, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188907 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   1. {main}() /home/serg/site/aqjol/index.php:0, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188915 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   2. require() /home/serg/site/aqjol/index.php:17, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188922 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   3. require_once() /home/serg/site/aqjol/wp-blog-header.php:16, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188928 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   4. include() /home/serg/site/aqjol/wp-includes/template-loader.php:89, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188935 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   5. get_template_part() /home/serg/site/aqjol/wp-content/themes/aqjol/single-services.php:18, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188941 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188948 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188955 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/services/
+[Mon Apr 25 11:41:21.188962 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   9. print_r() /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-single-services.php:10, referer: http://aqjol.tes/services/

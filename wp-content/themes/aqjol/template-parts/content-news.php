@@ -20,7 +20,7 @@ $categories=get_posts($args);
 		<div class="col-sm-9">
 			<p class="date"><?=$value->post_date?></p>
 			<p>
-				<?=$value->post_content?>
+				<?=mb_substr(strip_tags($value->post_content),0,255).'...'?>
 			</p>
 		</div>
 	</article>
