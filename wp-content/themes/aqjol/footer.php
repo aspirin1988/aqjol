@@ -1,4 +1,5 @@
 <!--начало Футер-->
+<?php get_the_category_by_ID( $cat_ID )?>
 <footer class="container">
 	<img class="img-responsive" src="<?=get_field('footer_logo',4) ?>" alt="Logo inverted">
 	<div class="contacts-footer">
