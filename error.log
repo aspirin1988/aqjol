@@ -1132,3 +1132,32 @@
 [Mon Apr 25 11:41:21.188948 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/services/
 [Mon Apr 25 11:41:21.188955 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/services/
 [Mon Apr 25 11:41:21.188962 2016] [:error] [pid 8946] [client 127.0.0.1:51990] PHP   9. print_r() /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-single-services.php:10, referer: http://aqjol.tes/services/
+[Wed Apr 27 16:41:04.178697 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP Warning:  Invalid argument supplied for foreach() in /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-menu.php on line 45, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.180648 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP Stack trace:, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181007 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   1. {main}() /home/serg/site/aqjol/index.php:0, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181016 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   2. require() /home/serg/site/aqjol/index.php:17, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181020 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   3. require_once() /home/serg/site/aqjol/wp-blog-header.php:16, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181025 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   4. include() /home/serg/site/aqjol/wp-includes/template-loader.php:89, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181029 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   5. get_template_part() /home/serg/site/aqjol/wp-content/themes/aqjol/page-menu.php:23, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181033 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181038 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181041 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181050 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP Warning:  Invalid argument supplied for foreach() in /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-menu.php on line 52, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181059 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP Stack trace:, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181063 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   1. {main}() /home/serg/site/aqjol/index.php:0, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181067 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   2. require() /home/serg/site/aqjol/index.php:17, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181070 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   3. require_once() /home/serg/site/aqjol/wp-blog-header.php:16, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181073 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   4. include() /home/serg/site/aqjol/wp-includes/template-loader.php:89, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181077 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   5. get_template_part() /home/serg/site/aqjol/wp-content/themes/aqjol/page-menu.php:23, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181080 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181083 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/
+[Wed Apr 27 16:41:04.181086 2016] [:error] [pid 20409] [client 127.0.0.1:33888] PHP   8. require() /home/serg/site/aqjol/wp-includes/template.php:564, referer: http://aqjol.tes/
+[Wed Apr 27 17:43:25.789775 2016] [:error] [pid 5621] [client 127.0.0.1:35375] PHP Parse error:  syntax error, unexpected '...' (T_ELLIPSIS), expecting ',' or ';' in /home/serg/site/aqjol/wp-content/themes/aqjol/template-parts/content-menu.php on line 27, referer: http://aqjol.tes/services/
+[Wed Apr 27 17:43:25.789815 2016] [:error] [pid 5621] [client 127.0.0.1:35375] PHP Stack trace:, referer: http://aqjol.tes/services/
+[Wed Apr 27 17:43:25.789831 2016] [:error] [pid 5621] [client 127.0.0.1:35375] PHP   1. {main}() /home/serg/site/aqjol/index.php:0, referer: http://aqjol.tes/services/
+[Wed Apr 27 17:43:25.789839 2016] [:error] [pid 5621] [client 127.0.0.1:35375] PHP   2. require() /home/serg/site/aqjol/index.php:17, referer: http://aqjol.tes/services/
+[Wed Apr 27 17:43:25.789845 2016] [:error] [pid 5621] [client 127.0.0.1:35375] PHP   3. require_once() /home/serg/site/aqjol/wp-blog-header.php:16, referer: http://aqjol.tes/services/
+[Wed Apr 27 17:43:25.789851 2016] [:error] [pid 5621] [client 127.0.0.1:35375] PHP   4. include() /home/serg/site/aqjol/wp-includes/template-loader.php:89, referer: http://aqjol.tes/services/
+[Wed Apr 27 17:43:25.789858 2016] [:error] [pid 5621] [client 127.0.0.1:35375] PHP   5. get_template_part() /home/serg/site/aqjol/wp-content/themes/aqjol/page-menu.php:23, referer: http://aqjol.tes/services/
+[Wed Apr 27 17:43:25.789864 2016] [:error] [pid 5621] [client 127.0.0.1:35375] PHP   6. locate_template() /home/serg/site/aqjol/wp-includes/general-template.php:171, referer: http://aqjol.tes/services/
+[Wed Apr 27 17:43:25.789871 2016] [:error] [pid 5621] [client 127.0.0.1:35375] PHP   7. load_template() /home/serg/site/aqjol/wp-includes/template.php:521, referer: http://aqjol.tes/services/

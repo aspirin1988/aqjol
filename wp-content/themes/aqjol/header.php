@@ -14,6 +14,12 @@
 	<link href="<?php bloginfo('template_directory') ?>/public/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php bloginfo('template_directory') ?>/public/css/styles.css" rel="stylesheet">
 	<link href="<?php bloginfo('template_directory') ?>/public/css/slidenav.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/slider.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/slideshow.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/dotnav.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/slidenav.min.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/datepicker.min.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
