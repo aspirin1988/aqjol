@@ -6,20 +6,43 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Ақ жол | <?php wp_title() ?></title>
+
+	<?php $current_object=get_queried_object(); $field=get_option($current_object->taxonomy.'_'.$current_object->term_taxonomy_id) ?>
+	<title>Ақ жол |
+		<?php
+		if (is_tax()||is_category()){
+			$_title=$field['meta-title'];
+			if ($_title){
+				echo $_title;
+			} else{
+				if (get_field('meta-title')){
+					the_field('meta-title');
+				}else{
+					the_title();}
+			}
+		}else{
+			if (get_field('meta-title')){
+				the_field('meta-title');
+			}else{
+				the_title();}
+		}?>
+	</title>
+	<meta name="description" content="<?php if (is_tax()){ echo $field['meta-description'];}else{ the_field('meta-description');}?>"/>
+
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
 	<!-- Bootstrap -->
 	<link href="<?php bloginfo('template_directory') ?>/public/css/uikit.min.css" rel="stylesheet">
-	<link href="<?php bloginfo('template_directory') ?>/public/css/bootstrap.min.css" rel="stylesheet">
-	<link href="<?php bloginfo('template_directory') ?>/public/css/styles.css" rel="stylesheet">
-	<link href="<?php bloginfo('template_directory') ?>/public/css/slidenav.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/uikit.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/slider.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/slideshow.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/dotnav.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/slidenav.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/bower_components/uikit/css/components/datepicker.min.css">
+	<link href="<?php bloginfo('template_directory') ?>/public/css/slidenav.min.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory') ?>/public/css/bootstrap.min.css" rel="stylesheet">
+	<link href="<?php bloginfo('template_directory') ?>/public/css/styles.css" rel="stylesheet">
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
