@@ -1,7 +1,6 @@
 
 <!-- РАСПЛЫВЧАТАЯ КАРТИНКА -->
-<div class="container image-faq">
-	<img class="img-responsive" src="<?php the_post_thumbnail_url() ?>" alt="Вопрос-ответ">
+<div class="image-faq" style="background-image: url('<?php the_post_thumbnail_url() ?>')">
 </div>
 <!-- конец РАСПЛЫВЧАТАЯ КАРТИНКА -->
 

@@ -8,11 +8,32 @@ ul {
   list-style-type: none;
 }
 
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.gen-button {
+  display: inline-block;
+}
+
 .gen-button {
   color: white;
   padding: 12px 35px;
   background-color: #6a5a8b;
   border: none;
+}
+
+a.gen-button:hover,
+a.gen-button:active,
+a.gen-button:focus,
+a.gen-button:visited {
+  color: white;
+  text-decoration: none;
 }
 
 .gen-button:hover {
@@ -44,8 +65,7 @@ ul {
 }
 
 .menu-page .switcher-header li:hover {
-  background-color: transparent;
-  border-bottom: solid #6a5a8b 8px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu-page .switcher-header li a {
@@ -194,8 +214,11 @@ nav.navbar {
 /* конец НАВИГАЦИЯ */
 
 /* ФУТЕР*/
-footer.container {
+footer {
   background: url(../images/background-footer.jpg.png);
+}
+
+footer .container {
   color: white;
   padding: 3% 6% 1% 6%;
   vertical-align: middle;
@@ -264,7 +287,7 @@ footer li.selected::after {
 
 @media (min-width: 1200px) {
   .main-section {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
@@ -476,14 +499,24 @@ footer li.selected::after {
   }
 }
 
+.news article + article {
+  margin-top: 20px;
+}
+
 .news article h3 {
+  margin-top: 0;
   text-indent: 8%;
   color: #6a5a8b;
+}
+
+.news .col-sm-3 img + img {
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
   .news article h3 {
     text-indent: 0;
+    display: block;
     text-align: center;
   }
   .news .col-sm-3 img {
@@ -581,6 +614,14 @@ footer li.selected::after {
 .photolist .col-sm-4 {
   padding: 5px;
 }
+
+@media (min-width: 768px) {
+  .photolist img {
+    width: 100%;
+    height: 280px;
+  }
+}
+
 /* конец СПИСОК ФОТО */
 
 /* УПРАВЛЕНИЕ ПАГИНАЦИЕЙ */
@@ -772,14 +813,16 @@ footer li.selected::after {
 /* РАСПЛЫВЧАТАЯ КАРТИНКА */
 
 @media (min-width: 1200px) {
-  .image-faq.container {
-    width: 1200px;
+  .image-faq{
+    background: 50% 100%/100% auto no-repeat;
+    width: 100%;
+    height: 350px;
     padding: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .image-faq.container {
+  .image-faq {
     display: none;
   }
 }
@@ -952,6 +995,7 @@ footer li.selected::after {
 /* КОНТАКТЫ */
 .contacts {
   margin-top: 90px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -961,7 +1005,7 @@ footer li.selected::after {
 }
 
 .contacts {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .contacts a,
