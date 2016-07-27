@@ -9,7 +9,6 @@
 	</div>
 </div>
 <!-- конец ГЛАВНЫЙ РАЗДЕЛ -->
-
 <!-- О РЕСТОРАНЕ -->
 <div class="container about-on-mainpage">
 	<div class="row">
